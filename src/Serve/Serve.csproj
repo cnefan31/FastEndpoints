@@ -1,18 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="FastEndpoints.Messaging.Remote" Version="5.26.0.20-beta" />
+        <PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
+        <PackageReference Include="Grpc.AspNetCore.Web" Version="2.63.0" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Contracts\Contracts.csproj" />
-    <ProjectReference Include="..\Fastendpoints.Messaging.Remote.Web\Fastendpoints.Messaging.Remote.Web.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Contracts\Contracts.csproj" />
+        <!--<ProjectReference Include="..\Fastendpoints.Messaging.Remote.Web\Fastendpoints.Messaging.Remote.Web.csproj" />-->
+    </ItemGroup>
 
 </Project>

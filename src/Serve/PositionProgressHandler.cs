@@ -12,11 +12,19 @@ public sealed class PositionProgressHandler : IClientStreamCommandHandler<Curren
     public async Task<ProgressReport> ExecuteAsync(IAsyncEnumerable<CurrentPosition> stream, CancellationToken ct)
     {
         var currentNumber = 0;
-        await foreach (var position in stream)
+        var iterator = stream.GetAsyncEnumerator(ct);
+
+        while (await iterator.MoveNextAsync())
         {
+            var position = iterator.Current;
             logger.LogInformation("Current number: {pos}", position.Number);
             currentNumber = position.Number;
         }
+        //await foreach (var position in stream)
+        //{
+        //    logger.LogInformation("Current number: {pos}", position.Number);
+        //    currentNumber = position.Number;
+        //}
         return new ProgressReport { LastNumber = currentNumber };
     }
 }

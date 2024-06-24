@@ -17,7 +17,7 @@ public class Program
         });
         var app = builder.Build();
 
-        app.UseGrpcWeb();
+        app.UseGrpcWeb(new() { DefaultEnabled = true });
         app.UseCors(b => b.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
         app.MapHandlers(h =>
         {

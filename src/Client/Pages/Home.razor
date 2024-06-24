@@ -34,9 +34,9 @@ Welcome to your new app.
                 i++;
                 messages.Add(string.Format("{0} {1:D4}", DateTime.Now, i));
                 yield return new() { Number = i };
+                await Task.Delay(1000, ct);
                 StateHasChanged();
                 // Console.WriteLine(i.ToString());
-                await Task.Delay(1000, ct);
             }
         }
     }
