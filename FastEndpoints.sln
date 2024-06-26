@@ -5,15 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{956B6C52-A430-4066-8EB2-45766AE4AC45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastendpoints.Messaging.Remote.Browser", "src\Fastendpoints.Messaging.Remote.Browser\Fastendpoints.Messaging.Remote.Browser.csproj", "{24DCC2E2-54D9-4352-8BA1-0AEC338E0914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastendpoints.Messaging.Remote.Browser", "src\Fastendpoints.Messaging.Remote.Browser\Fastendpoints.Messaging.Remote.Browser.csproj", "{24DCC2E2-54D9-4352-8BA1-0AEC338E0914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastendpoints.Messaging.Remote.Web", "src\Fastendpoints.Messaging.Remote.Web\Fastendpoints.Messaging.Remote.Web.csproj", "{699EB3DF-CC2C-4E44-B33B-10A830738CBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastendpoints.Messaging.Remote.Web", "src\Fastendpoints.Messaging.Remote.Web\Fastendpoints.Messaging.Remote.Web.csproj", "{699EB3DF-CC2C-4E44-B33B-10A830738CBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\Contracts.csproj", "{AA794FDC-3ABE-4D9B-A2B6-A8A6F0A5EA71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\Contracts\Contracts.csproj", "{AA794FDC-3ABE-4D9B-A2B6-A8A6F0A5EA71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serve", "src\Serve\Serve.csproj", "{1F778387-06E3-4353-AEFE-158F00360E56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serve", "src\Serve\Serve.csproj", "{1F778387-06E3-4353-AEFE-158F00360E56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "src\Client\Client.csproj", "{F3EA19CD-02AD-4864-83F1-049760AD1FA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "src\Client\Client.csproj", "{F3EA19CD-02AD-4864-83F1-049760AD1FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawClient", "src\RawClient\RawClient.csproj", "{1D91ADDA-F216-42FD-91BE-22787611B7D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{F3EA19CD-02AD-4864-83F1-049760AD1FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3EA19CD-02AD-4864-83F1-049760AD1FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3EA19CD-02AD-4864-83F1-049760AD1FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D91ADDA-F216-42FD-91BE-22787611B7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D91ADDA-F216-42FD-91BE-22787611B7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D91ADDA-F216-42FD-91BE-22787611B7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D91ADDA-F216-42FD-91BE-22787611B7D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{AA794FDC-3ABE-4D9B-A2B6-A8A6F0A5EA71} = {956B6C52-A430-4066-8EB2-45766AE4AC45}
 		{1F778387-06E3-4353-AEFE-158F00360E56} = {956B6C52-A430-4066-8EB2-45766AE4AC45}
 		{F3EA19CD-02AD-4864-83F1-049760AD1FA4} = {956B6C52-A430-4066-8EB2-45766AE4AC45}
+		{1D91ADDA-F216-42FD-91BE-22787611B7D1} = {956B6C52-A430-4066-8EB2-45766AE4AC45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4A308E1-3811-42C5-8835-0DF5E18FB382}
